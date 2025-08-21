@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Bienvenido a la página de inicio</h2>
+    {% if nombre %}
+        <p>Hola, {{ nombre }}!</p>
+    {% else %}
+        <p>Este es un sitio en Flask con plantillas dinámicas.</p>
+    {% endif %}
+{% endblock %}
